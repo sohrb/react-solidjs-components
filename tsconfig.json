@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+
+    // Language and Environment
+    "jsx": "react-jsx",
+    "moduleDetection": "force",
+    "target": "ES2022",
+
+    // Output Formatting
+    "noErrorTruncation": true,
+
+    // Output Formatting
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
