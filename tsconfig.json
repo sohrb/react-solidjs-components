@@ -10,6 +10,8 @@
     // Modules
     "module": "ESNext",
     "moduleResolution": "bundler",
+
+    // Emit
     "noEmit": true,
 
     // Interop Constraints
