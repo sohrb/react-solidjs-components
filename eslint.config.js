@@ -4,6 +4,9 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import ts from "typescript-eslint";
 
 const config = ts.config(
+  {
+    ignores: ["dist"],
+  },
   js.configs.recommended,
   ts.configs.recommendedTypeChecked,
   ts.configs.stylisticTypeChecked,
