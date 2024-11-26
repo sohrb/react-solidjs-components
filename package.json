@@ -22,6 +22,8 @@
     "clean": "rimraf ./dist",
     "format": "prettier --write",
     "lint": "eslint",
+    "prepublishOnly": "vite build",
+    "postpublish": "rimraf ./dist",
     "typecheck": "tsc"
   },
   "devDependencies": {
