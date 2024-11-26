@@ -1,12 +1,22 @@
 {
   "name": "react-solidjs-components",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sohrb/react-solidjs-components"
+  },
   "license": "MIT",
   "author": {
     "name": "Sohrab Chegini",
     "email": "sohrab.chegini@gmail.com"
   },
   "type": "module",
+  "module": "./dist/react-solidjs-components.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "vite build",
     "clean": "rimraf ./dist",
