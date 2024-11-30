@@ -3,6 +3,7 @@ import prettier from "eslint-config-prettier";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(
@@ -23,6 +24,14 @@ const config = ts.config(
   {
     files: ["**/*.js"],
     extends: [ts.configs.disableTypeChecked],
+  },
+  {
+    files: ["*.config.js"],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
   },
   {
     plugins: {
