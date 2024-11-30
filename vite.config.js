@@ -23,6 +23,7 @@ const input = Object.fromEntries(
 const config = defineConfig({
   plugins: [dts({ tsconfigPath: "./tsconfig.json" })],
   build: {
+    minify: false,
     lib: {
       entry: path.resolve(import.meta.dirname, "src/index.tsx"),
       formats: ["es"],
