@@ -5,7 +5,7 @@ import { globSync } from "glob";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 
-import packageJson from "./package.json";
+import { peerDependencies } from "./package.json";
 
 const input = Object.fromEntries(
   globSync("src/**/*.tsx").map((file) => {
@@ -29,7 +29,7 @@ const config = defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: Object.keys(packageJson.peerDependencies),
+      external: Object.keys(peerDependencies),
       input,
       output: {
         entryFileNames: "[name].js",
